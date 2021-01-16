@@ -22,11 +22,15 @@
 // });
 
 import React from 'react';
-import { View, Image, StyleSheet } from 'react-native';
+import { View, Image, StyleSheet, TextInput } from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
-    paddingTop: 50,
+    paddingTop: 50, // we don't need this, as our logo will be in the center?
+    flex: 1,
+    backgroundColor: '#A4508B',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   tinyLogo: {
     width: 50,
@@ -38,18 +42,42 @@ const styles = StyleSheet.create({
     height: null,
     resizeMode: 'cover'
   },
+  inputText: {
+
+
+
+  }
 });
 
 export default class App extends React.Component {
+  state= {
+    username: "",
+    password: ""
+  }
   render() {
     return (
-      <View style={styles.logo}>
+      // this is where the logo picture will go?
+      <View style={styles.logo}> 
         <Image
           style={styles.tinyLogo}
           source={require('./Images/Test.jpg')}
         />
+        <View style={styles.inputView}>
+          <TextInput
+            style= {styles.inputText}
+            placeholder= "Username..."
+            placeholderTextColor= "#590799"
+            onChangeText={text => this.setState({username:text})}/>
+        </View>
+        <View style={styles.inoutView}>
+        <TextInput
+          secureTextEntry
+          style={styles.inoutText}
+          placeholder="Password..."
+          placeholderTextColor= "#590799"
+          onChangeText={text => this.setState({password:text})}/>
+        </View>
       </View>
     );
   }
 }
-

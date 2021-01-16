@@ -14,3 +14,11 @@ https://dribbble.com/tags/mobile_template
 
 Hack The North Videos:
 https://www.youtube.com/user/hackthenorthtv/videos
+
+
+
+TABS:
+    npm install @react-navigation/bottom-tabs
+    npm install react-navigation
+    npm start -- --reset-cache
+https://reactnavigation.org/docs/tab-based-navigation/ 

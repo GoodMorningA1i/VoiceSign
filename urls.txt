@@ -28,7 +28,12 @@ https://reactnavigation.org/docs/tab-based-navigation/
 Icons for Tabs:
 https://ionicons.com/v4/cheatsheet.html 
 
+Audio Analyzer:
+    npm install react-audio-analyser --save
+https://reactjsexample.com/the-react-component-for-audio-recordings-and-draw-the-curve/
 
+Splash Screen:
+    expo install expo-splash-screen
 
 Tensorflow:
     expo install expo-gl-cpp

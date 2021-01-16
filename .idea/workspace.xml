@@ -34,9 +34,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70c991d1-89ac-4bbe-bf8a-74dbe4008017" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/VoiceSign.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/urls.txt" beforeDir="false" afterPath="$PROJECT_DIR$/urls.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +59,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$PROJECT_DIR$/../AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AndroidStudioProjects/HelloWorld" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -80,11 +83,20 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="439" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610814737134">
+    <state x="439" y="183" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610821609288">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="439" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610814737134" />
+    <state x="439" y="183" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610821609288" />
+    <state x="316" y="128" width="1269" height="800" key="AVDManager" timestamp="1610821709288">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="316" y="128" width="1269" height="800" key="AVDManager/0.0.1920.1040@0.0.1920.1040" timestamp="1610821709288" />
+    <state x="730" y="283" key="FileChooserDialogImpl" timestamp="1610821708045">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="730" y="283" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1610821708045" />
   </component>
 </project>

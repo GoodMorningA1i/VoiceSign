@@ -19,13 +19,14 @@ function SettingsScreen() {
   );
 }
 
-function CameraScreen() {
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Camera</Text>
-    </View>
-  );
-}
+import CameraScreen from './Features/Camera.js'
+// function CameraScreen() {
+//   return (
+//     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+//       <Text>Camera!!!</Text>
+//     </View>
+//   );
+// }
 
 const Tab = createBottomTabNavigator();
 
@@ -46,7 +47,7 @@ export default function App() {
               iconName = focused ? 'ios-list-box' : 'ios-list';
             }
             else if (route.name === 'Camera') {
-              iconName = focused ? 'ios-list-box' : 'ios-list';
+              iconName = focused ? 'ios-camera' : 'ios-camera';
             }
 
             // You can return any component that you like here!

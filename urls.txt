@@ -3,3 +3,6 @@ https://www.youtube.com/watch?v=v-3sNvMNosY
 
 Setting up Android Simulator for AMD devices:
 https://www.youtube.com/watch?v=57vZtl5l9hk
+
+Mobile App Templates
+https://dribbble.com/tags/mobile_template

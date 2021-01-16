@@ -21,4 +21,27 @@ TABS:
     npm install @react-navigation/bottom-tabs
     npm install react-navigation
     npm start -- --reset-cache
+    npm install @react-navigation/native
+    npm install --save react-native-gesture-handler react-native-reanimated react-native-screens
 https://reactnavigation.org/docs/tab-based-navigation/ 
+
+Icons for Tabs:
+https://ionicons.com/v4/cheatsheet.html 
+
+Audio Analyzer:
+    npm install react-audio-analyser --save
+https://reactjsexample.com/the-react-component-for-audio-recordings-and-draw-the-curve/
+
+Splash Screen:
+    expo install expo-splash-screen
+
+Tensorflow:
+    expo install expo-gl-cpp
+    expo install expo-gl
+    expo install expo-camera
+    npx pod-install
+    npm i @react-native-community/async-storage
+    npm install react-native-fs --save
+    npm install @tensorflow/tfjs
+    npm install @tensorflow/tfjs-react-native
+https://www.npmjs.com/package/@tensorflow/tfjs-react-native

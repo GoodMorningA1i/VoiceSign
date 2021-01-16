@@ -1,8 +1,6 @@
 Initial React Setup:
 https://reactnative.dev/docs/environment-setup
 
-
-
 React native, adding an image component:
 https://www.youtube.com/watch?v=v-3sNvMNosY
 

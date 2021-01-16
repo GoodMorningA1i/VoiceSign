@@ -3,6 +3,8 @@ https://reactnative.dev/docs/environment-setup
 
 React native, adding an image component:
 https://www.youtube.com/watch?v=v-3sNvMNosY
+******For SVG files, use below: 
+https://www.npmjs.com/package/react-svg 
 
 Setting up Android Simulator for AMD devices:
 https://www.youtube.com/watch?v=57vZtl5l9hk

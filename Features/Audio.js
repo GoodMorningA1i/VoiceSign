@@ -1,52 +1,52 @@
-import React, {Component} from "react";
-import AudioAnalyser from "react-audio-analyser"
+import * as React from 'react';
+import { View, StyleSheet, Button } from 'react-native';
+import { Audio } from 'expo-av';
 
-export default class demo extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            status: null
-        }
-    }
+export default function App() {
+  const [recording, setRecording] = React.useState();
 
-    controlAudio(status) {
-        this.setState({
-            status
-        })
+  async function startRecording() {
+    try {
+      console.log('Requesting permissions..');
+      await Audio.requestPermissionsAsync();
+      await Audio.setAudioModeAsync({
+        allowsRecordingIOS: true,
+        playsInSilentModeIOS: true,
+      }); 
+      console.log('Starting recording..');
+      const recording = new Audio.Recording();
+      await recording.prepareToRecordAsync(Audio.RECORDING_OPTIONS_PRESET_HIGH_QUALITY);
+      await recording.startAsync(); 
+      setRecording(recording);
+      console.log('Recording started');
+    } catch (err) {
+      console.error('Failed to start recording', err);
     }
+  }
 
-    render() {
-        const {status, audioSrc} = this.state;
-        const audioProps = {
-            audioType: "audio/wav", // Temporarily only supported audio/wav, default audio/webm
-            status, // Triggering component updates by changing status
-            audioSrc,
-            startCallback: (e) => {
-                console.log("succ start", e)
-            },
-            pauseCallback: (e) => {
-                console.log("succ pause", e)
-            },
-            stopCallback: (e) => {
-                this.setState({
-                    audioSrc: window.URL.createObjectURL(e)
-                })
-                console.log("succ stop", e)
-            }
-        }
-        return (
-            <AudioAnalyser {...audioProps}>
-                <div className="btn-box">
-                    {status !== "recording" &&
-                    <i className="iconfont icon-start" title="开始"
-                       onClick={() => this.controlAudio("recording")}></i>}
-                    {status === "recording" &&
-                    <i className="iconfont icon-pause" title="暂停"
-                       onClick={() => this.controlAudio("paused")}></i>}
-                    <i className="iconfont icon-stop" title="停止"
-                       onClick={() => this.controlAudio("inactive")}></i>
-                </div>
-            </AudioAnalyser>
-        );
-    }
+  async function stopRecording() {
+    console.log('Stopping recording..');
+    setRecording(undefined);
+    await recording.stopAndUnloadAsync();
+    const uri = recording.getURI(); 
+    console.log('Recording stopped and stored at', uri);
+  }
+
+  return (
+    <View style={styles.container}>
+      <Button
+        title={recording ? 'Stop Recording' : 'Start Recording'}
+        onPress={recording ? stopRecording : startRecording}
+      />
+    </View>
+  );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    backgroundColor: '#ecf0f1',
+    padding: 10,
+  },
+});

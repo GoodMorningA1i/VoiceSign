@@ -11,7 +11,6 @@ function HomeScreen() {
   );
 }
 
-// import {demo as SettingsScreen} from './Features/Audio.js'
 function SettingsScreen() {
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
@@ -19,6 +18,8 @@ function SettingsScreen() {
     </View>
   );
 }
+
+import AudioScreen from './Audio.js'
 
 import CameraScreen from './Camera.js'
 // function CameraScreen() {
@@ -46,6 +47,9 @@ export default function App() {
             else if (route.name === 'Settings') {
               iconName = focused ? 'ios-list-box' : 'ios-list';
             }
+            else if (route.name === 'Audio') {
+              iconName = focused ? 'ios-headset' : 'ios-headset';
+            }
             else if (route.name === 'Camera') {
               iconName = focused ? 'ios-camera' : 'ios-camera';
             }
@@ -61,6 +65,7 @@ export default function App() {
       >
         <Tab.Screen name="Home" component={HomeScreen} />
         <Tab.Screen name="Settings" component={SettingsScreen} />
+        <Tab.Screen name="Audio" component={AudioScreen} />
         <Tab.Screen name="Camera" component={CameraScreen} />
       </Tab.Navigator>
   );

@@ -65,3 +65,52 @@ Our development team had limited prior knowledge of mobile development prior to 
 ### What's Next
 
 What’s next for Sign? We weren’t able to fully develop all the functionality we envisioned. If Sign were to grow, we envision including increased levels of complexity beyond short sentences. We would also incorporate 3D technology and animation to better show hand movement, which is crucial in sign language. We would further develop gamification in the app to make the experience more engaging for learners. Future iterations would include user research upfront as well as usability testing. Our prototype also shows a scanning feature with the purposes of confirming a user’s comprehension. We would continue working on our UI to make the app more user intuitive. We would also implement the functionality we weren’t able to implement. 
+
+### Image attributions
+Arrow by Gajah Mada Studio from the Noun Project
+https://thenounproject.com/search/?q=arrow&i=3687528
+ 
+avatar by Creative Stall from the Noun Project https://thenounproject.com/search/?q=avatar&i=1089489
+ 
+celebrate by sasha willins from the Noun Project
+https://thenounproject.com/search/?q=celebrating+hands&i=938020
+ 
+checkmark by Asmuh from the Noun Project
+https://thenounproject.com/search/?q=checkmark&i=2193585
+ 
+Dog by Jack Made from the Noun Project
+https://thenounproject.com/search/?q=dog&i=2274809
+ 
+Hand by Jamie Yeo from the Noun Project
+https://thenounproject.com/search/?q=hand&i=1147795
+ 
+Sign Language by Romain J from the Noun Project
+https://thenounproject.com/jimenez_romain/collection/sign-language/?i=2029098
+ 
+legging by Victoruler from the Noun Project
+https://thenounproject.com/search/?q=legs&i=3339332
+ 
+locked lock by Alex Bickov from the Noun Project
+https://thenounproject.com/search/?q=lock&i=1010538
+ 
+Sign language a by Stephanie Leeson from the Noun Project
+https://thenounproject.com/search/?q=sign+language&i=250726
+ 
+Home by Gajah Mada Studio from the Noun Project
+https://thenounproject.com/search/?q=home&i=3687679
+ 
+profile by Ananth from the Noun Projecthttps://thenounproject.com/search/?q=profile&i=922821
+ 
+Sign Language by Romain J from the Noun Project
+https://thenounproject.com/search/?q=sign+language&i=2029102
+ 
+word by Richard Schumann from the Noun Project
+https://thenounproject.com/search/?q=word&i=95000
+ 
+snap of fingers by Oleksandr Panasovskyi from the Noun Project
+https://thenounproject.com/search/?q=snap+of+fingers&i=2286121
+ 
+Sound by Adrien Coquet from the Noun Project
+https://thenounproject.com/search/?q=sound&i=1939979
+
+<a href="https://www.freepik.com/vectors/background">Background vector created by pikisuperstar - www.freepik.com</a>

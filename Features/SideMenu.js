@@ -7,6 +7,7 @@ const Drawer = createDrawerNavigator();
 
 import Picture from './Image.js';
 import Tabs from './Tabs.js';
+import LoginSystem from './LoginSystem.js';
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
       <Drawer.Navigator initialRouteName="Home">
         <Drawer.Screen name="Home" component={Tabs} />
         <Drawer.Screen name="Learning" component={Picture} />
+        <Drawer.Screen name="Login" component={LoginSystem} />
       </Drawer.Navigator>
     </NavigationContainer>
   );

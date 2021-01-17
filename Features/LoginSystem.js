@@ -23,7 +23,7 @@ export default class App extends React.Component {
         <View style={styles.image}>
           <Image
             style={styles.tinyLogo}
-            source={require('../Images/avatar.png')}
+            source={require('../Images/sign.png')}
           />
         </View>
 

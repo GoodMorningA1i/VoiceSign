@@ -18,4 +18,3 @@ This is a Reactive Native App that hopes to make learning sign language easy, on
 - What's next for ECHacksFarmers
 - Built With
 - Try it out
--Submission

@@ -22,7 +22,8 @@
 // });
 
 import React from 'react';
-import { View, Text, StyleSheet, TextInput, TouchableOpacity } from 'react-native';
+import { LinearGradient } from 'expo-linear-gradient';
+import { View, Text, StyleSheet, TextInput, TouchableOpacity, Image } from 'react-native';
 
 export default class App extends React.Component {
   state={
@@ -32,12 +33,26 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.logo}>SIGN</Text>
+        <LinearGradient
+          colors={['#6C0BB9', '#4B48D2', '#FFFFFF']}
+          style={styles.background}/>
+
+      <View style={styles.container}>
+        <Text style={styles.logo}>S I G N</Text>
+
+      </View>
+        <View style={styles.image}>
+          <Image
+            style={styles.tinyLogo}
+            source={require('./Images/sign.png')}
+          />
+        </View>
+
         <View style={styles.inputView} >
           <TextInput
             style={styles.inputText}
             placeholder="Username..."
-            placeholderTextColor="#003f5c"
+            placeholderTextColor="#FFFFFF"
             onChangeText={text => this.setState({email:text})}/>
         </View>
         <View style={styles.inputView}>
@@ -45,7 +60,7 @@ export default class App extends React.Component {
             secureTextEntry
             style={styles.inputText}
             placeholder="Password..."
-            placeholderTextColor="#003f5c"
+            placeholderTextColor="#FFFFFF"
             onChangeText={text => this.setState({password:text})}/>
         </View>
         <TouchableOpacity>
@@ -55,7 +70,7 @@ export default class App extends React.Component {
           <Text style={styles.loginText}>LOGIN</Text>
         </TouchableOpacity>
         <TouchableOpacity>
-          <Text style={styles.loginText}>Sign up</Text>
+          <Text style={styles.loginText}>Don't have an account? Sign up.</Text>
         </TouchableOpacity>
       </View>
 
@@ -65,16 +80,28 @@ export default class App extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
+    padding: 0,
     flex: 1,
-    backgroundColor: '#1e90ff',
+    // backgroundColor: "#6C0BB9",
     alignItems: 'center',
     justifyContent: 'center',
+    height: 570,
+    top:0
+  },
+  background: {
+    position: 'absolute',
+    left: 0,
+    top:0,
+    right: 0,
+    height: '100%',
+  },
+  tinyLogo: {
+    width: 150,
+    height: 150,
   },
   logo: {
-    fontWeight: "bold",
-    fontSize:50,
-    color:"#fb5b5a",
-    marginBottom: 40
+    fontSize:48,
+    color:"#FCCA18",
   },
   inputView: {
     width:"80%",
@@ -90,12 +117,11 @@ const styles = StyleSheet.create({
     color: "white"
   },
   forgot: {
-    color: "white",
-    fontSize: 11
+    color: "black",
+    fontSize: 15
   },
   loginBtn: {
     width:"80%",
-    backgroundColor: "#fb5b5a",
     borderRadius: 25,
     heigth: 50,
     alignItems: "center",
@@ -104,29 +130,7 @@ const styles = StyleSheet.create({
     marginBottom:10
   },
   loginText:{
-    color: "white"
+    color: "black",
+    fontSize: 16
   }
 });
-
-
-
-//  inputView: {
-//    width: "80%",
-//    backgroundColor:
-//    borderRadius:25;
-//    height: 50,
-//    marginBottom: 20,
-//    justifyContent: "center",
-//    padding: 20
-//   }
-
-// tinyLogo: {
-  //   width: 50,
-  //   height: 50,
-  // },
-
-  // logo: {
-  //   paddingTop: 50,
-  //   width: null,
-  //   height: null,
-  //   resizeMode: 'cover'

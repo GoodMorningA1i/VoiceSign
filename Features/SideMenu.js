@@ -12,32 +12,11 @@ import LoginSystem from './LoginSystem.js';
 export default function App() {
   return (
     <NavigationContainer>
-      <Drawer.Navigator initialRouteName="Home">
+      <Drawer.Navigator initialRouteName="Login">
+        <Drawer.Screen name="Login" component={LoginSystem} />
         <Drawer.Screen name="Home" component={Tabs} />
         <Drawer.Screen name="Learning" component={Picture} />
-        <Drawer.Screen name="Login" component={LoginSystem} />
       </Drawer.Navigator>
     </NavigationContainer>
   );
 }
-
-/*
-function HomeScreen({ navigation }) {
-  return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Button
-        onPress={() => navigation.navigate('Notifications')}
-        title="Go to notifications"
-      />
-    </View>
-  );
-}
-
-function NotificationsScreen({ navigation }) {
-  return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Button onPress={() => navigation.goBack()} title="Go back home" />
-    </View>
-  );
-}
-*/

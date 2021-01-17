@@ -7,7 +7,7 @@ This is a Reactive Native App that hopes to make learning sign language easy, on
 - Figma Design: https://www.figma.com/file/BCgMJeDR6Kzxq7pEuhfE4M/Untitled?node-id=1%3A10
 - Check out urls.txt for more resources
 
-##DevPost Sumbission Questions
+## DevPost Sumbission Questions
 
 - Inspiration
 - What it does

@@ -18,7 +18,7 @@ Audio Analyzer:
 - npm install react-audio-analyser --save
 
 Splash Screen:
--expo install expo-splash-screen
+- expo install expo-splash-screen
 
 Tensorflow:
 - expo install expo-camera

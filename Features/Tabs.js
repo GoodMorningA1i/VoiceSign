@@ -1,12 +1,43 @@
 import * as React from 'react';
-import { Text, View } from 'react-native';
+import { Text, StyleSheet, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { LinearGradient } from 'expo-linear-gradient';
+import { ReactSVG } from 'react-svg'
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: 'orange',
+  },
+  background: {
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    top: 0,
+    height: 700,
+  },
+  button: {
+    padding: 15,
+    alignItems: 'center',
+    borderRadius: 5,
+  },
+  text: {
+    backgroundColor: 'transparent',
+    fontSize: 15,
+    color: '#fff',
+  },
+});
 
 function HomeScreen() {
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Home!</Text>
+      <LinearGradient
+        colors={['rgba(75,72,210,1)', 'rgba(133,0,238,1)', 'rgba(255,255,255,0)']}
+        style={styles.background}/>
+      <Text>Hello</Text>
     </View>
   );
 }
@@ -14,7 +45,10 @@ function HomeScreen() {
 function SettingsScreen() {
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Settings!</Text>
+      <LinearGradient
+        colors={['rgba(75,72,210,1)', 'rgba(133,0,238,1)', 'rgba(255,255,255,0)']}
+        style={styles.background}/>
+      <Text>Settings</Text>
     </View>
   );
 }

@@ -1,0 +1,1 @@
+curl -X POST -u "apikey:bD4lrT_aq4Q9JUOab9oHivLeuxEKsUYDxr4xZtL_8ZYi" --header "Content-Type: audio/flac" --data-binary @C:\Users\thoma\VoiceSign\audio-file.flac "https://api.us-east.speech-to-text.watson.cloud.ibm.com/instances/6a4483fa-1b2c-417e-95a6-9bf56608fe86/v1/recognize"

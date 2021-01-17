@@ -25,10 +25,14 @@ import React from 'react';
 import { LinearGradient } from 'expo-linear-gradient';
 import { View, Text, StyleSheet, TextInput, TouchableOpacity, Image } from 'react-native';
 
+import { FaHome } from "react-icons/fa";
+
+
 export default class App extends React.Component {
   state={
     username: "",
     password: ""
+
   }
   render() {
     return (
@@ -37,10 +41,15 @@ export default class App extends React.Component {
           colors={['#6C0BB9', '#4B48D2', '#FFFFFF']}
           style={styles.background}/>
 
+      {/* importing home icon from font awesome */}
+      <View style={styles.icon}>
+        <Text style={styles.home}><FaHome size={55}/> </Text>
+      </View>
+
       <View style={styles.container}>
         <Text style={styles.logo}>S I G N</Text>
-
       </View>
+
         <View style={styles.image}>
           <Image
             style={styles.tinyLogo}
@@ -103,8 +112,13 @@ const styles = StyleSheet.create({
     fontSize:48,
     color:"#FCCA18",
   },
+  // stlying for home icon
+  home: {
+    paddingRight: 470,
+    paddingTop: 10,
+  },
   inputView: {
-    width:"80%",
+    width: "80%",
     backgroundColor: "#465881",
     borderRadius: 25,
     height: 50,
@@ -114,7 +128,6 @@ const styles = StyleSheet.create({
   },
   inputText: {
     height:50,
-    color: "white"
   },
   forgot: {
     color: "black",

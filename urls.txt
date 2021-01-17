@@ -29,6 +29,7 @@ Icons for Tabs:
 https://ionicons.com/v4/cheatsheet.html 
 
 Audio Analyzer:
+    expo install expo-av
     npm install react-audio-analyser --save
 https://reactjsexample.com/the-react-component-for-audio-recordings-and-draw-the-curve/
 

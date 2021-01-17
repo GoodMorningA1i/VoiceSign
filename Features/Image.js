@@ -10,20 +10,23 @@ const styles = StyleSheet.create({
     height: 50,
   },
   logo: {
-    width: 66,
-    height: 58,
+    paddingTop: 300,
+    width: 400,
+    height: 400,
+    flex: 2,
+    alignItems: "center"
   },
 });
 
-const DisplayAnImage = () => {
-  return (
-    <View style={styles.container}>
-      <Image
-        style={styles.tinyLogo}
-        source={require('./Images/Test.jpg')}
-      />
-    </View>
-  );
+export default class App extends React.Component {
+  render() {
+    return (
+      <View style={styles.logo}>
+        <Image
+          style={styles.tinyLogo}
+          source={require('../Images/moving_hand.gif')}
+        />
+      </View>
+    );
+  }
 }
-
-export default DisplayAnImage;

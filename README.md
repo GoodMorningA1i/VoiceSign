@@ -4,6 +4,13 @@ This is a React Native App that hopes to make learning sign language easy, on th
 
 An educational app and communication tool that converts voice to text to sign language. 
 
+## Pitch Videos & Other Relevant Work You Can Check Out
+- Main Pitch Video: https://youtu.be/vLvQLgAgt1k
+- IBM API: https://youtu.be/cto9DFt-KPU
+- Prototype Video: https://www.youtube.com/watch?v=sKGbIfZu6UA&feature=youtu.be
+
+- Figma Deisgn: https://www.figma.com/file/BCgMJeDR6Kzxq7pEuhfE4M/Untitled?node-id=1%3A10
+
 ## Software Installations
 
 React Styling:
@@ -23,12 +30,9 @@ Splash Screen:
 Tensorflow:
 - expo install expo-camera
 
-## Relevant Links
-
-- Figma Design: https://www.figma.com/file/BCgMJeDR6Kzxq7pEuhfE4M/Untitled?node-id=1%3A10
-- Check out urls.txt for more resources
-
 ## DevPost Sumbission Questions
+
+Devpost Submission Link for Hack The North 2021: https://devpost.com/software/sign-5dzuir
 
 ### Motivation + Inspiration
 
